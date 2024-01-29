@@ -1,6 +1,75 @@
 @charset "UTF-8";
 
 .cabecalho{
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    
+   color: white;
     background-color: #2D5377;
-    column-rule: #fff;
+}
+
+.cabecalho-logo{
+    padding: 1.5em 0;
+    width: 14.5em;
+}
+
+.cabecalho-menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    background-color: #272B3A87;
+}
+
+.cabecalho_menu-item{
+    display: inline-block;
+}
+
+.cabecalho_menu-item a{
+    display: inline-block;
+    padding: 1.86em 1.42em;
+}
+
+@media (min-width: 600px){
+    .cabecalho{
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .cabecalho-logo{
+        padding: 2.5em 0;
+
+    }
+
+    .cabecalho-menu{
+        background-color: transparent;
+    }
+}
+
+@media (min-width: 770px){
+    .cabecalho_menu-item--matricular {
+        margin-left: 1.42em;
+
+        border-radius: 6px;
+        background-color: #e93d50;
+      
+    }
+
+    .cabecalho_menu-item--matricular a {
+        padding: 1.8em 3.5em;
+    }
+}
+
+
+@media (min-width: 1066px){
+    .cabecalho{
+        padding-left: calc((100%-960px)/2);
+        padding-right: calc((100%-960px)/2);
+    }
 }
