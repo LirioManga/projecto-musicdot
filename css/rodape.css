@@ -43,3 +43,42 @@
     font-weight: 500;
     margin: 0.62em 0;
 }
+
+@media (max-width: 640px){
+    .rodape-seccao{
+        margin-top:2em;
+    }
+}
+
+
+@media (min-width: 640px){
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        font-size: 1rem;
+    }
+
+    .rodape_seccao-sobre, .rodape_seccao-cursos, .rodape_seccao-newsletter{
+        width: 45%;
+    }
+
+    .rodape_seccao-cursos{
+        order: 1;
+        margin: 0;
+    }
+    .rodape_seccao-links{
+        order: 2;
+        margin: 0;
+    }
+    .rodape_seccao-sobre{
+        order: 3;
+        margin-top: 2em;
+    }
+    .rodape_seccao-newsletter{
+        order: 4;
+        margin-top: 2em;
+    }
+    
+}
